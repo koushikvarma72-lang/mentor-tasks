@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 class="title">Movie Finder</h1>
+    <p class="sub">Search a movie to see poster, details and trailer link</p>
+
+    <div class="card">
+      <form id="searchForm" class="search-row">
+        <input
+          id="queryInput"
+          class="search-input"
+          placeholder="Type a movie title (e.g. Inception)"
+        />
+        <button id="searchBtn" type="submit" class="search-btn">
+          Search
+        </button>
+      </form>
+      <div id="errorBox" class="error" style="display:none;"></div>
+
+      <div id="movieResult" class="movie" style="display:none;">
+        <div class="movie-header">
+          <img id="moviePoster" class="poster" alt="Poster" />
+          <div class="movie-meta">
+            <h2 id="movieTitle" class="movie-title"></h2>
+            <div id="movieYear" class="movie-line"></div>
+            <div id="movieGenre" class="movie-line"></div>
+            <div id="movieRating" class="movie-line"></div>
+            <button id="trailerBtn" class="trailer-btn" target="_blank">
+              Watch trailer on YouTube
+            </button>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Plot</h3>
+          <p id="moviePlot"></p>
+        </div>
+
+        <div class="section">
+          <h3>Cast</h3>
+          <p id="movieActors"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Weather Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1 class="title">Live Weather Dashboard</h1>
+    <p class="sub">Search any city to see real-time weather (auto-refresh every 5 min)</p>
+
+    <div class="card-shell">
+      <div class="layout">
+        <!-- LEFT: search + current + forecast -->
+        <div class="main-panel">
+          <div class="search-panel">
+            <form id="searchForm" class="search-row">
+              <div class="search-input-wrap">
+                <input
+                  id="cityInput"
+                  class="search-input"
+                  placeholder="Enter city (e.g. London, Mumbai)"
+                />
+              </div>
+              <button id="searchBtn" type="submit" class="search-btn">Search</button>
+            </form>
+            <div id="errorBox" class="error" style="display:none;"></div>
+          </div>
+
+          <div id="currentCard" class="current-card" style="display:none;"></div>
+
+          <div id="forecastSection" class="forecast-section" style="display:none;">
+            <div class="forecast-title">5-day forecast</div>
+            <div id="forecastGrid" class="forecast-grid"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: quick cities -->
+        <div class="quick-panel">
+          <div class="quick-title">Quick cities</div>
+          <div class="quick-buttons">
+            <button class="quick-btn" data-city="London">London</button>
+            <button class="quick-btn" data-city="Mumbai">Mumbai</button>
+            <button class="quick-btn" data-city="Tokyo">Tokyo</button>
+            <button class="quick-btn" data-city="San Francisco">San Francisco</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

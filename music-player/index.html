@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player – YT Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ytm-app">
+    <!-- Left sidebar -->
+    <aside class="ytm-sidebar">
+      <h1 class="logo">MyMusic</h1>
+      <nav>
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">Explore</a>
+        <a href="#" class="nav-item">Library</a>
+      </nav>
+      <div class="sidebar-section">
+        <p class="sidebar-title">Playlists</p>
+        <a href="#" class="nav-item small">Liked songs</a>
+        <a href="#" class="nav-item small">Chill</a>
+        <a href="#" class="nav-item small">Workout</a>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="ytm-main">
+      <header class="ytm-topbar">
+        <input type="text" class="search" placeholder="Search songs, artists">
+        <div class="user-chip">U</div>
+      </header>
+
+      <section class="ytm-content">
+        <h2>Queue</h2>
+        <div id="queue-list" class="ytm-queue"></div>
+      </section>
+    </main>
+
+    <!-- Bottom player bar -->
+    <footer class="ytm-player-bar">
+      <div class="bar-left">
+        <img id="cover" src="covers/track1.jpg" alt="" class="bar-cover">
+        <div>
+          <div id="title" class="bar-title">Energetic Morning</div>
+          <div id="artist" class="bar-artist">Sample Artist</div>
+        </div>
+      </div>
+
+      <div class="bar-center">
+        <div class="controls-row">
+          <button class="icon-btn" id="prev-btn">⏮</button>
+          <button class="play-btn" id="play-btn">
+            <span id="play-label">Play</span>
+          </button>
+          <button class="icon-btn" id="next-btn">⏭</button>
+        </div>
+        <div class="time-row">
+          <span id="current-time">00:00</span>
+          <input type="range" id="progress" min="0" max="100" value="0">
+          <span id="duration">00:00</span>
+        </div>
+      </div>
+
+      <div class="bar-right">
+        <button class="icon-btn" id="mute-btn">🔊</button>
+        <input type="range" id="volume" min="0" max="100" value="80">
+      </div>
+    </footer>
+
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
