@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>My Todo List</h1>
+    </header>
+
+    <main class="app-main">
+      <form id="todo-form" class="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="What do you need to do?"
+          autocomplete="off"
+          required
+          pattern="[A-Za-z_*]+"
+        />
+
+        <button type="submit" >Add</button>
+      </form>
+      <ul id="todo-list" class="todo-list">
+        <!----->
+      </ul>
+      
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
