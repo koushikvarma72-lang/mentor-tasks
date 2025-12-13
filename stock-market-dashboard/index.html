@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Stock Dashboard - Static</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>Stock Dashboard</h1>
+  <div class="controls">
+    <input id="search" placeholder="Search symbol or name..." />
+    <select id="sort">
+      <option value="none">Sort: None</option>
+      <option value="price-asc">Price ↑</option>
+      <option value="price-desc">Price ↓</option>
+      <option value="change-desc">Change % ↓</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <section class="list" id="stock-list"></section>
+  <section class="chart" id="chart-section">
+    <h2 id="chart-title">Select a stock to view chart</h2>
+    <canvas id="priceChart" width="800" height="300"></canvas>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
