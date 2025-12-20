@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Product Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Premium quality clothing and fashion products at unbeatable prices" />
+  <title>Product Details - Amazon.Agilisium</title>
   <link rel="stylesheet" href="product.css" />
 </head>
 <body>
   <header class="header">
-    <h1>amazon.agilisium</h1>
-    <nav> 
+    <h1>🛍️ Amazon.Agilisium</h1>
+    <nav>
       <ul>
         <li><a href="product.html">Product</a></li>
         <li><a href="about.html">Account</a></li>
@@ -17,63 +19,67 @@
     </nav>
   </header>
 
-<section class="product-container">
+  <main>
+    <section class="product-container">
+      <!-- Product Gallery -->
+      <div class="gallery">
+        <img class="main-img" src="https://m.media-amazon.com/images/I/61w2PG6QNqL._SY879_.jpg" alt="XYXX Men's Nova Polo T-Shirt - Purple" />
+        <div class="thumbs">
+          <img src="https://m.media-amazon.com/images/I/31JMiLh6QAL._SX38_SY50_CR,0,0,38,50_.jpg" alt="View 1" />
+          <img src="https://m.media-amazon.com/images/I/31f5TuvTriL._SX38_SY50_CR,0,0,38,50_.jpg" alt="View 2" />
+          <img src="https://m.media-amazon.com/images/I/31fd3befH+L._SX38_SY50_CR,0,0,38,50_.jpg" alt="View 3" />
+        </div>
+      </div>
 
-  <div class="gallery">
-    <img class="main-img" src="https://m.media-amazon.com/images/I/61w2PG6QNqL._SY879_.jpg" alt="product">
-    <div class="thumbs">
-      <img src="https://m.media-amazon.com/images/I/31JMiLh6QAL._SX38_SY50_CR,0,0,38,50_.jpg">
-      <img src="https://m.media-amazon.com/images/I/31f5TuvTriL._SX38_SY50_CR,0,0,38,50_.jpg">
-      <img src="https://m.media-amazon.com/images/I/31fd3befH+L._SX38_SY50_CR,0,0,38,50_.jpg">
-    </div>
-  </div>
+      <!-- Product Details -->
+      <div class="details">
+        <h1>XYXX Men's Nova 100% Combed Cotton Regular Fit Polo T-Shirt</h1>
+        <p class="price">589</p>
+        
+        <!-- Color Variant -->
+        <div class="variant">
+          <h4>Color:</h4>
+          <span class="color black" title="Black"></span>
+          <span class="color brown" title="Brown"></span>
+          <span class="color blue" title="Blue"></span>
+        </div>
 
-  <div class="details">
-    <h1>XYXX Men's Nova 100% Combed Cotton Regular Fit Polo T-Shirt</h1>
-    <p class="price">₹589 </p>
-    <div class="variant">
-      <h4>Color</h4>
-      <span class="color black"></span>
-      <span class="color brown"></span>
-      <span class="color blue"></span>
-    </div>
+        <!-- Size Variant -->
+        <div class="variant">
+          <h4>Size:</h4>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>10</button>
+        </div>
 
-    <div class="variant">
-      <h4>Size</h4>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>10</button>
-    </div>
+        <button class="cart-btn">🛒 Add to Cart</button>
+      </div>
+    </section>
 
-    <button class="cart-btn">Add to Cart</button>
-  </div>
+    <!-- Related Products -->
+    <section class="related">
+      <h2>Related Products</h2>
+      <div class="related-grid">
+        <div class="card">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/51JPDnkOhUL._AC_SR370,420,0,C_BR3_.jpg" alt="Peter England Shirt" />
+          <p>Peter England Premium Shirt</p>
+          <span>₹1,089</span>
+        </div>
 
-</section>
-<section class="related">
-  <h2>Related Products</h2>
+        <div class="card">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/71Ssx2h3n7L._AC_SR370,420,0,C_BR3_.jpg" alt="Sonata Watch" />
+          <p>Sonata Analog Watch</p>
+          <span>₹1,454</span>
+        </div>
 
-  <div class="related-grid">
-    <div class="card">
-      <img src="https://images-eu.ssl-images-amazon.com/images/I/51JPDnkOhUL._AC_SR370,420,0,C_BR3_.jpg">
-      <p>Peter England</p>
-      <span>₹1,089</span>
-    </div>
-
-    <div class="card">
-      <img src="https://images-eu.ssl-images-amazon.com/images/I/71Ssx2h3n7L._AC_SR370,420,0,C_BR3_.jpg">
-      <p>Sonata</p>
-      <span>₹1,454</span>
-    </div>
-
-    <div class="card">
-      <img src="https://images-eu.ssl-images-amazon.com/images/I/617StVQjtUL._AC_SR370,420,0,C_BR3_.jpg">
-      <p>Lotto Men Mavin Classic Sneakers</p>
-      <span>₹1,749</span>
-    </div>
-  </div>
-</section>
-
+        <div class="card">
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/617StVQjtUL._AC_SR370,420,0,C_BR3_.jpg" alt="Lotto Sneakers" />
+          <p>Lotto Men Mavin Classic Sneakers</p>
+          <span>₹1,749</span>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
-
